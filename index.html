@@ -1,0 +1,129 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoGloss & Wrap Solutions</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./Assets/logo-auto-gloss.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn-header">Pide tu Presupuesto</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <!--<div class="hero-content">-->
+      <div class="hero-left">
+        <img src="./Assets/autoNegro.png" alt="Auto Negro" />
+        <h1 id="title">Bienvenido al Reto Trainee Frontend 🚀</h1>
+        <h1>La Excelencia en el Detalle.<br />Transformamos tu Vehículo.</h1>
+        <p>
+          Especialistas en Ploteo Vehicular de Alta Resistencia y Abrillantado
+          para una Protección Impecable y un Brillo Duradero.
+        </p>
+        <div class="cta">
+          <p>Explora Nuestros Servicios ---></p>
+          <a href="#services" class="btn">Ver más</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="slideshow">
+          <img src="Assets/autoAzul.png" class="active" alt="Auto Lustroso" />
+          <img src="Assets/autoGris.png" />
+          <img src="Assets/autoRojo.png" />
+          <img src="Assets/autoGris2.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="services">
+      <h2>Nuestros Servicios</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>Ploteo Vehicular Personalizado</h3>
+          <p>
+            Diseño, impresión e instalación de vinilos de alta durabilidad para
+            rotulación comercial, personalización y protección de pintura.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">💎</div>
+          <h3>Abrillantado Cerámico Premium</h3>
+          <p>
+            Tratamientos cerámicos que ofrecen protección invisible, brillo
+            espejo y facilidad de mantenimiento.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🧽</div>
+          <h3>Restauración y Detalles</h3>
+          <p>
+            Pulido de faros, eliminación de rayones leves y detailing interior
+            para un acabado impecable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+      <h2>¿Listo para el Siguiente Nivel de tu Vehículo? Contáctanos</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nombre" />
+        <input type="email" id="email" placeholder="Correo" />
+        <input type="text" id="car" placeholder="Marca/Modelo del Vehículo" />
+        <select id="service">
+          <option value="">Servicio de Interés</option>
+          <option>Ploteo Vehicular</option>
+          <option>Abrillantado Cerámico</option>
+          <option>Restauración</option>
+        </select>
+        <textarea id="message" placeholder="Mensaje"></textarea>
+        <button type="submit" class="btn">Enviar Solicitud</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-col">
+        <h3>AutoGloss & Wrap Solutions</h3>
+        <p>Pasión por la perfección automotriz, protección que perdura.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>📍 Dirección<br />📞 Teléfono<br />✉️ Email</p>
+      </div>
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <p>🔗 Instagram | Facebook</p>
+      </div>
+    </footer>
+    <div class="copy">© 2025 AutoGloss & Wrap Solutions</div>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
