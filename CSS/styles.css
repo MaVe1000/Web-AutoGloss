@@ -18,6 +18,15 @@ body {
   color: var(--dark);
   line-height: 1.6; /* Mejora la legibilidad */
 }
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 3rem 0;
+  text-shadow: 0 0 5px rgba(96, 96, 96, 0.7);
+}
 
 /* Header - Sección */
 header {
@@ -66,6 +75,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 #mainNav li {
@@ -115,6 +126,7 @@ header {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 
 /* ---------------------------------------------------- */
@@ -124,7 +136,7 @@ header {
 /* Hero - Sección */
 #title {
   text-align: center;
-  margin-top: 3rem;
+  margin: 3rem 1rem 4rem 1rem;
   font-size: 1.5rem;
   font-family: "Krona One", sans-serif;
   font-style: italic;
@@ -213,8 +225,7 @@ header {
   display: flex;
   text-align: center;
   align-items: center;
-  gap: 1rem;
-  margin: auto;
+  margin: 0;
 }
 /* Slideshow lado derecho */
 .hero-right .slideshow {
@@ -242,7 +253,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--white);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem;
   margin: 0.5rem 0;
   border: solid 1px #ccc;
   border-radius: 5px;
@@ -264,10 +275,7 @@ header {
   padding: 3rem 2rem;
   background: var(--light);
 }
-.services h2 {
-  text-align: center;
-  margin: 3rem;
-}
+
 .services .grid {
   display: grid;
   gap: 1.5rem;
@@ -285,8 +293,8 @@ header {
   margin-bottom: 1rem;
 }
 .card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.284);
+  transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -299,10 +307,7 @@ header {
   background: #333;
   color: var(--white);
 }
-.contact h2 {
-  text-align: center;
-  margin: 3rem;
-}
+
 /* Formulario de contacto */
 form {
   max-width: 600px;
@@ -329,7 +334,7 @@ form button {
 footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   background: #000;
   color: var(--white);
   gap: 1.5rem;
@@ -348,7 +353,19 @@ footer a {
   color: #aaa;
   font-size: 0.9rem;
 }
+.copy img {
+  max-height: 30px; /* Tamaño de los logos */
+  max-width: 70px;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s ease;
+}
 
+.copy img:hover {
+  opacity: 0.7; /* Efecto al pasar el ratón */
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+
+}
 /* ---------------------------------------------------- */
 /*                  /Media Queries/                     */
 /* ---------------------------------------------------- */
@@ -356,6 +373,9 @@ footer a {
 /* Estilos para pantallas tablets y desktop */
 @media (min-width: 765px) {
   /* El header cambia a alineación horizontal */
+  #logoAuto {
+    max-width: 200px;
+  }
   header {
     flex-direction: row; /* Logo/Toggle y Menú en línea */
     justify-content: space-between; /* Logo a la izquierda, Menú a la derecha */
@@ -366,6 +386,9 @@ footer a {
   .header {
     width: auto; /* Permite que el logo ocupe su espacio sin forzar ancho */
     justify-content: flex-start;
+  }
+  .btn-header {
+    border: solid 1px #ccc;
   }
 
   /* El toggle se oculta en desktop */
@@ -392,7 +415,7 @@ footer a {
   }
 
   #mainNav a {
-    padding: 0.5rem 0; /* Ajuste de padding más sutil en desktop */
+    padding: 0.5rem; /* Ajuste de padding más sutil en desktop */
     color: var(--white);
     font-weight: normal; /* Ya no tan bold */
   }
@@ -402,6 +425,8 @@ footer a {
     border: solid 1px var(--primary);
     transition: all 0.3s ease-in-out;
     padding: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.762);
+    font-weight: bold;
   }
 
   /* Hero Section: vuelve a ser horizontal */
@@ -451,10 +476,17 @@ footer a {
 
   #mainNav a:hover {
     color: var(--light);
-    font-weight: bold;
     font-size: 1.1rem;
     text-transform: uppercase;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.762);
     transition: all 0.3s ease-in-out;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+/*Estilos para pantallas de escritorio a partir de (1200px)*/
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.5rem;
   }
 }
