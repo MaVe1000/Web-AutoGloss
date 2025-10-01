@@ -266,7 +266,7 @@ header {
 }
 .services h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 3rem;
 }
 .services .grid {
   display: grid;
@@ -301,7 +301,7 @@ header {
 }
 .contact h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 3rem;
 }
 /* Formulario de contacto */
 form {
