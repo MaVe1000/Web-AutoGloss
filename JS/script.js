@@ -47,7 +47,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const message = document.getElementById("message").value.trim();
   const service = document.getElementById("service").value;
 
-  if (!name || !email || !message) {
+  if (!name || !email || !message ) {
     alert("Por favor completa todos los campos obligatorios.");
     return;
   }

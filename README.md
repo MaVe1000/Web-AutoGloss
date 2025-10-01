@@ -51,16 +51,28 @@ Más allá del reto, este proyecto se inspira en un sitio realista para **un tal
 
 - **Enfoque:** Profesional y confiable, con énfasis en calidad, durabilidad y personalización.
 - **Paleta:** Grises oscuros, negros, platas + un color vibrante (azul eléctrico, naranja quemado o verde lima).
-- **Tipografía:** Sans-serif moderna y limpia.
+- **Tipografía:** Krona One, Sans-serif: moderna y limpia. Bebas Neue: que aporta firmeza al estilo.
 - **Tono:** Experto, elegante y visualmente impactante.
 
 ---
 
-## 📸 Capturas
+## 📸 Capturas mostrando el diseño en Responsive 📱 💻 👩‍💻
+
+Este proyecto fue diseñado y desarrollado utilizando la estrategia **Mobile First**.
+
+Esto significa que la estructura base del CSS está optimizada para dispositivos móviles, y los estilos se ajustan progresivamente para resoluciones de escritorio mediante el uso de _media queries_.
 
 <p align="center">
-  <img src="Assets/images/asdf.png" width="250">
+  <img src="Assets/Images-readme/Captura mobil 375 px.png" alt="Captura tamaño mobil" height="350">
+  <img src="Assets/Images-readme/Captura 768px.png" alt="Captura tamaño tablet" height="350">
+  <img src="Assets/Images-readme/Captura 1024px.png" alt="Captura tamaño desktop" height="350">
 </p>
+
+### Pruebas en consola mostrando un codigo limpio, libre de errores:
+
+<p style="margin: 2rem;">
+  <img src="Assets/Images-readme/Captura test de Consola Limpia.png" alt="Captura tamaño mobil" height="350">
+ </p>
 
 ---
 
@@ -77,12 +89,14 @@ Más allá del reto, este proyecto se inspira en un sitio realista para **un tal
 ```
 Web-AutoGloss/
 ├── index.html
-├── css/
-│ └── styles.css
-├── js/
-│ └── script.js
+├── CSS/
+│   └── styles.css
+├── JS/
+│   └── script.js
 └── assets/
-└── (imágenes, íconos, etc.)
+│   └── (imágenes, íconos, etc.)
+│   └── Images-readme/
+│         └── (imágenes de capturas de la web para colocar en el Readme)
 ```
 
 ---
@@ -109,16 +123,6 @@ Web-AutoGloss/
 2. Abrir el proyecto en un editor de código (ej: VS Code).
 
 3. Ejecutar el archivo index.html en el navegador.
-
----
-
-## 📱 Responsive
-
-Desktop: estructura en múltiples columnas
-
-Mobile: todo en una sola columna
-
-Servicios: grid adaptable
 
 ---
 
