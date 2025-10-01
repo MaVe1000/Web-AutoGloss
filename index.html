@@ -5,41 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoGloss & Wrap Solutions</title>
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">
-        <img src="./Assets/logo-auto-gloss.png" alt="Logo" />
+      <div class="header">
+        <img id="logoAuto" src="./Assets/logo-auto-gloss.png" alt="Logo" />
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
       </div>
-      <nav>
+      <nav id="mainNav">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#contact">Contacto</a></li>
+          <li><a href="#contact" class="btn-header">Pide tu Presupuesto</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="btn-header">Pide tu Presupuesto</a>
     </header>
 
     <!-- Hero -->
     <section class="hero">
       <!--<div class="hero-content">-->
       <div class="hero-left">
-        <img src="./Assets/autoNegro.png" alt="Auto Negro" />
+        <img src="/Assets/autoNegro.png" alt="Auto Negro" />
         <h1 id="title">Bienvenido al Reto Trainee Frontend 🚀</h1>
-        <h1>La Excelencia en el Detalle.<br />Transformamos tu Vehículo.</h1>
+        <h1>La Excelencia en el Detalle.</h1>
         <p>
-          Especialistas en Ploteo Vehicular de Alta Resistencia y Abrillantado
-          para una Protección Impecable y un Brillo Duradero.
+          En este challenge, los detalles brillan por su limpieza y diseño como
+          en estos autos ✨.
         </p>
         <div class="cta">
-          <p>Explora Nuestros Servicios ---></p>
+          <p>Explora Nuestros Servicios:</p>
           <a href="#services" class="btn">Ver más</a>
         </div>
       </div>
-
       <div class="hero-right">
         <div class="slideshow">
           <img src="Assets/autoAzul.png" class="active" alt="Auto Lustroso" />
@@ -85,16 +85,27 @@
     <section id="contact" class="contact">
       <h2>¿Listo para el Siguiente Nivel de tu Vehículo? Contáctanos</h2>
       <form id="contactForm">
-        <input type="text" id="name" placeholder="Nombre" />
-        <input type="email" id="email" placeholder="Correo" />
-        <input type="text" id="car" placeholder="Marca/Modelo del Vehículo" />
+        <label for="name" class="label-contact"
+          >Nombre Completo
+        </label>
+        <input type="text" id="name" placeholder="Nombre completo"autocomplete="Nombre"required />
+        <label for="email" class="label-contact" 
+          >Correo Electrónico</label
+        >
+        <input type="email" id="email" placeholder="Correo" autocomplete="Email"required />
+        <label for="car" class="label-contact" 
+          >Marca/Modelo del Vehículo</label
+        >
+        <input type="text" id="car" placeholder="Marca/Modelo del Vehículo" autocomplete="off"/>
+        <label for="service" class="label-contact">Servicio de Interés</label>
         <select id="service">
-          <option value="">Servicio de Interés</option>
+          <option value="">Seleccione aquí el Servicio</option>
           <option>Ploteo Vehicular</option>
           <option>Abrillantado Cerámico</option>
           <option>Restauración</option>
         </select>
-        <textarea id="message" placeholder="Mensaje"></textarea>
+        <label for="message" class="label-contact">Mensaje</label>
+        <textarea id="message" placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn">Enviar Solicitud</button>
       </form>
     </section>
@@ -122,7 +133,7 @@
         <p>🔗 Instagram | Facebook</p>
       </div>
     </footer>
-    <div class="copy">© 2025 AutoGloss & Wrap Solutions</div>
+    <div class="copy">© 2025 MindDev Perú + María Rebolleda</div>
 
     <script src="JS/script.js"></script>
   </body>
