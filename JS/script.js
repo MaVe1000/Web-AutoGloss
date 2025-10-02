@@ -38,6 +38,29 @@ function showSlide() {
 
 setInterval(showSlide, 6000); // cambia cada 6 segundos
 
+// *-*-*-*-*-**-SCROLL SUAVE EN VER MAS HACIA SERVICIOS -*-*-***-*-
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Espera a que el documento HTML esté completamente cargado
+
+  const button = document.getElementById("btn-ver-mas");
+
+  // Seleccionar la sección de destino
+  const seccionServicios = document.getElementById("services");
+
+  // 3. Añadir un "event listener" al botón
+  if (button && seccionServicios) {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      // 4. Aplicar el scroll suave a la sección de destino
+      seccionServicios.scrollIntoView({
+        behavior: "smooth", // Esta propiedad hace la magia del scroll suave
+      });
+    });
+  }
+});
+
 // Validación simple del formulario de contacto
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
@@ -47,7 +70,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const message = document.getElementById("message").value.trim();
   const service = document.getElementById("service").value;
 
-  if (!name || !email || !message ) {
+  if (!name || !email || !message) {
     alert("Por favor completa todos los campos obligatorios.");
     return;
   }
