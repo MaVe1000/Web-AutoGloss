@@ -128,6 +128,4 @@ Web-AutoGloss/
 
 ## 🧑‍💻 Autor
 
-Proyecto desarrollado por María Verónica Rebolleda (GitHub: MaVe1000)
-
-© 2025 MindDev Perú + María Rebolleda
+Proyecto desarrollado con 💖 por María Verónica Rebolleda (GitHub: MaVe1000).
