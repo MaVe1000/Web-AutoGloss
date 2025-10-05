@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   color: var(--dark);
@@ -225,6 +229,7 @@ header {
   align-items: center;
   margin: 0;
 }
+
 /* Slideshow lado derecho */
 .hero-right .slideshow {
   position: relative;
@@ -372,6 +377,7 @@ footer a {
   /* El header cambia a alineación horizontal */
   #logoAuto {
     max-width: 200px;
+    cursor: auto;
   }
   header {
     flex-direction: row; /* Logo/Toggle y Menú en línea */

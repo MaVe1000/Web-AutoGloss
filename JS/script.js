@@ -69,15 +69,39 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
   const service = document.getElementById("service").value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //para mejorar la validación en el campo de email
 
   if (!name || !email || !message) {
     alert("Por favor completa todos los campos obligatorios.");
     return;
   }
-  if (!email.includes("@")) {
-    alert("Por favor ingresa un correo válido.");
+  if (name.length < 3) {
+    //mejora de validación de nombre
+    alert("El nombre debe tener al menos 3 caracteres.");
     return;
   }
+  if (name === "") {
+    alert("Por favor ingresa un nombre.");
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Por favor ingresa un correo electrónico válido.");
+    return;
+  }
+
+  if (message.length < 10) {
+    alert("El mensaje debe tener al menos 10 caracteres.");
+    return;
+  }
+
+  if (service === "default") {
+    alert("Por favor selecciona un servicio.");
+    return;
+  }
+
+  /*if (!email.includes("@")) { alert("Por favor ingresa un correo válido."); return; }
+   */
 
   alert(
     `Formulario enviado correctamente ✅. En breve responderemos tu consulta sobre: ${service}✨. ¡Gracias por contactarnos, ${name}!`
